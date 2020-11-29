@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2020 at 05:31 PM
+-- Generation Time: Nov 29, 2020 at 05:37 PM
 -- Server version: 5.6.16
 -- PHP Version: 7.2.34
 
@@ -25,12 +25,12 @@ DELIMITER $$
 --
 -- Procedures
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `GetCategory` (IN `category` VARCHAR(255))  BEGIN 
-	select * from categories where name = category; 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `GetCategory` (IN `category` VARCHAR(255))  BEGIN
+	select * from categories where name = category;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `GetUserByUsername` (IN `uName` VARCHAR(255))  BEGIN 
-	select * from users where username = uName; 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `GetUserByUsername` (IN `uName` VARCHAR(255))  BEGIN
+	select * from users where username = uName;
 END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `GetUsers` ()  BEGIN
